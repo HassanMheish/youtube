@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Youtube Clone</title>
+  <link rel="icon" href="images/hm.svg" type="image/x-icon">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      color: #000000; 
+      background-color: #dbeeff;
+      scroll-behavior: smooth;
+      box-sizing: border-box;
+    }
+    .navbar{
+      box-shadow: 0 5px 10px rgba(211, 211, 211, 0.8);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0 25px;
+      position: fixed;
+      width: 100%;
+      top: 0;
+      background-color: crimson; 
+      z-index: 100; 
+    }
+
+    .nav-links{
+      display: flex;
+      gap: 20px;
+    }
+    .links{
+      list-style: none;
+      font-size: 1.1em;
+      cursor: pointer;
+
+    }
+    #dark-mode-icon{
+      font-size: larger;
+      cursor: pointer;
+      padding: 15px;
+      margin-right: 50px;
+
+    }
+    .dark-mode{
+      background-color: rgb(15, 15, 15);
+      color: crimson;
+    }
+    .dark-nav{
+      background-color: rgb(43, 37, 37);
+      box-shadow: none;
+      border-bottom: 1px rgba(211, 211, 211, 0.205) solid;
+    }
+
+    nav ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    nav ul li {
+      display: inline;
+      margin-right: 20px;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      font-size: 16px;
+      color: inherit;
+    }
+    ul li{
+      margin-bottom: 10px;
+    }
+    .center{
+      text-align: center;
+    }
+
+    main {
+      padding: 40px;
+   
+    }
+
+    .intro-section h1 {
+      font-size: 36px;
+      margin-bottom: 20px;
+    }
+
+    .intro-section p {
+      font-size: 18px;
+      line-height: 1.5;
+      margin-bottom: 30px;
+    }
+
+    footer {
+      background-color: #222;
+      color: #fff;
+      font-size: 14px;
+      bottom: 0;
+      position: fixed;
+      left: 0;
+      right: 0;
+      text-align: center;
+      z-index: 999;
+    }
+
+    footer p {
+      margin: 10px 0;
+    }
+
+    footer i {
+      color: crimson;
+    }
+
+    footer a {
+      color: #3c97bf;
+      text-decoration: none;
+    }
+
+    .font-large {
+      font-size: 24px;
+    }
+
+    .font-blue {
+      color: blue;
+    }
+
+    .font-italic {
+      font-style: italic;
+    }
+
+    .list {
+      margin-left: 20px;
+    }
+
+    table {
+      margin: 20px;
+      border-collapse: collapse;
+      background-color: whitesmoke;
+    }
+
+    th, td {
+      padding: 10px;
+      border: 1px solid #242323;
+    }
+
+    .div-layout {
+      display: flex;
+      justify-content: center;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <ul>
+        <li class="links"><a href="youtube.html">Home</a></li>
+        <li class="links"><a href="signIn.html">Sign In</a></li>
+        <li class="links"><a href="signUp.html">Sign Up</a></li>
+        <li class="links"><a href="#top">Return to Top</a></li>
+      </ul>
+      <div id="dark-mode-icon">
+        <i class="fa-solid fa-circle-half-stroke"></i>
+      </div>
+    </nav>
+  </header>
+  
+  <main>
+    <section class="intro-section">
+      <div class="center">
+        <h1>Welcome to YouTube Clone</h1>
+        <p>
+          YouTube is a popular video-sharing platform that allows users to discover, watch, and share videos from various genres and categories. It has become a go-to destination for entertainment, education, and exploration of different interests.
+        </p>
+        <p>
+          Our YouTube Clone project aims to recreate the look and feel of YouTube, offering a user-friendly video-sharing platform where you can watch a wide variety of videos and reels. We have curated a collection of engaging content for you to explore and enjoy.
+        </p>
+        <p>
+          With our YouTube Clone, you can experience the familiar sign-in and sign-out pages, which provide a graphical user interface (GUI) similar to YouTube. Although the sign-in and sign-out functionality is for demonstration purposes only and does not connect to a backend system, it allows you to navigate the clone interface and browse through the available videos and reels.
+        </p>
+      </div>
+        <h3>Features of YouTube Clone:</h3>
+      <ul class="list">
+        <li>Access a wide range of videos and reels</li>
+        <li>Experience a user-friendly interface</li>
+        <li>Sign in and sign out</li>
+        <li>Watch videos and reels from various genres</li>
+      </ul>
+    </section>
+    <section>
+      <h3>Video Titles, Uploaders and Duration:</h3>
+      <table>
+        <tr>
+          <th>Video Title</th>
+          <th>Duration</th>
+          <th>Uploader</th>
+        </tr>
+        <tr>
+          <td>Chainsaw Man Ending 12 | Eve</td>
+          <td>1:30</td>
+          <td>Mappa Channel</td>
+        </tr>
+        <tr>
+          <td>30 Kills! This Is How Pro Reyna Looks Like - Sen Tenz Reyna MVP Valorant</td>
+          <td>30:27</td>
+          <td>Valorant Daily</td>
+        </tr>
+        <tr>
+          <td>A Day in the Life of a Software Engineer... WFH</td>
+          <td>11:31</td>
+          <td>Pirate King</td>
+        </tr>
+        <tr>
+          <td>Persona 5 - Beneath the Mask - Rainy Mood - 10 Hours</td>
+          <td>10:03:51</td>
+          <td>Sadistic Canada</td>
+        </tr>
+        <tr>
+          <td>Learn Flexbox CSS in 8 minutes</td>
+          <td>8:07</td>
+          <td>Slaying The Dragon</td>
+        </tr>
+        <tr>
+          <td>GOD OF WAR 4 - Full Gameplay Walkthrough / No Commentary [FULL GAME]</td>
+          <td>13:14:20</td>
+          <td>Gamer's Little Playground</td>
+        </tr>
+        <tr>
+          <td>PHP Full Course for non-haters 🐘 (2023)</td>
+          <td>4:00:00</td>
+          <td>Bro Code</td>
+        </tr>
+        <tr>
+          <td>Mortal Kombat 1 - Official Announcement Trailer</td>
+          <td>5:23</td>
+          <td>Mortal Kombat</td>
+        </tr>
+        <tr>
+          <td>Jujutsu Kaisen Season 2 Trailer</td>
+          <td>1:32</td>
+          <td>Toho Animation</td>
+        </tr>
+        <tr>
+          <td>Marvel's Spider-Man 2 | Gameplay Reveal</td>
+          <td>12:24</td>
+          <td>Marvel Entertainment</td>
+        </tr>
+      </table>
+      <h3>Real Titles and Uploaders:</h3>
+      <table>
+        <tr>
+          <th>Real Title</th>
+          <th>Uploader</th>
+        </tr>
+        <tr>
+          <td>Style tricks every skinny guy should know!</td>
+          <td>Brandon Balfour</td>
+        </tr>
+        <tr>
+          <td>Let's learn CSS Flexbox justify-content in one minute</td>
+          <td>FeStack</td>
+        </tr>
+        <tr>
+          <td>THE BEST YORU FAKE YOU WILL EVER SEE </td>
+          <td>ZipTie</td>
+        </tr>
+        <tr>
+          <td>Surprised cat</td>
+          <td>nekochuck</td>
+        </tr>
+        <tr>
+          <td>Magic Card | HTML CSS</td>
+          <td>easylearnaxis</td>
+        </tr>
+        <tr>
+          <td>Travis Scott - sdp interlude (Extended)</td>
+          <td>xeno</td>
+        </tr>
+        <tr>
+          <td>Building a Village - Librarian House</td>
+          <td>Zaypixel</td>
+        </tr>
+        <tr>
+          <td>Sekiro - Perfect deflecting every Divine Dragon attacks</td>
+          <td>sekijo</td>
+        </tr>
+        <tr>
+          <td>Souls Games Ranked</td>
+          <td>FaulesGaming</td>
+        </tr>
+      </table>
+    </section>
+  </main>
+  
+  <footer>
+    <p>Created  by <span style="color: #ff0000;font-family:Helvetica, sans-serif;"><i>Hassan Mheich</i></span></p>
+  </footer>
+  <script>
+    let navBar=document.querySelector('.navbar');
+    let darkMode=document.querySelector('#dark-mode-icon');
+    let body=document.body;
+    darkMode.addEventListener('click',()=>{
+      navBar.classList.toggle('dark-nav');
+      body.classList.toggle('dark-mode');
+    });
+  </script>
+  <script src="https://kit.fontawesome.com/d5ef23b432.js" crossorigin="anonymous"></script>
+</body>
+</html>

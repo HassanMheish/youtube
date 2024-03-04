@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign Up</title>
+  <link rel="icon" href="images/hm.svg" type="image/x-icon">
+  <style>
+    body {
+      background-color: #bdd4e8;
+      font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    
+
+    .sign-up-container {
+      background-color: rgb(248, 242, 242);
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      padding: 40px;
+      padding-right: 55px;
+      text-align: center;
+    }
+    
+ 
+    .youtube-logo {
+      width: 80px;
+      height: 60px;
+      margin-bottom: 20px;
+    }
+    
+
+    .sign-up-form {
+      margin-bottom: 20px;
+    }
+    
+  
+    .sign-up-input {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 10px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      font-size: 16px;
+    }
+    
+
+    .sign-up-button {
+      display: inline-block;
+      padding: 10px 20px;
+      font-size: 16px;
+      font-weight: bold;
+      text-align: center;
+      text-decoration: none;
+      color: #ffffff;
+      background-color: #ff0000;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    
+
+    .sign-in-link {
+      color: #ff0000;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .signIn{
+      text-decoration: none;
+      color: black;
+    }
+    .signIn:hover{
+      color: lightblue;
+    }
+    .signIn:active{
+      color: rgb(80, 80, 173);
+    }
+    footer {
+      background-color: #222;
+      color: #fff;
+      font-size: 14px;
+      bottom: 0;
+      position: fixed;
+      left: 0;
+      right: 0;
+      text-align: center;
+      z-index: 999;
+    }
+
+    footer p {
+      margin: 10px 0;
+    }
+
+    footer i {
+      color: red;
+    }
+
+    footer a {
+      color: #3c97bf;
+      text-decoration: none;
+    }
+
+    .font-large {
+      font-size: 24px;
+    }
+
+    .font-blue {
+      color: blue;
+    }
+
+    .font-italic {
+      font-style: italic;
+    }
+  </style>
+</head>
+<body>
+  <div class="sign-up-container">
+    <img src="images/youtube-logo.svg" alt="YouTube Logo" class="youtube-logo">
+    <form class="sign-up-form" id="sign-up-form">
+      <input type="text" name="username" placeholder="Username" class="sign-up-input" ><br>
+      <input type="number" name="age" placeholder="Age" class="sign-up-input" min="0" max="100" ><br>
+      <input type="email" name="email" placeholder="Email" class="sign-up-input" ><br>
+      <input type="password" name="password" placeholder="Password" class="sign-up-input" ><br>
+      <label>
+        Gender:<input type="radio" name="gender" value="male" checked> Male
+      </label>
+      <label>
+        <input type="radio" name="gender" value="female"> Female
+      </label><br><br>
+      <input type="submit" value="Sign Up" class="sign-up-button" id="sign-up-button"/>
+    </form>
+    <p class="sign-in-link">Already have an account? <a href="signIn.html" class="signIn">Sign In</a></p>
+  </div>
+  <footer>
+    <p>Created  by <span style="color: #ff0000;font-family:Helvetica, sans-serif;"><i>Hassan Mheich</i></span></p>
+  </footer>
+  <script>
+    const signUpForm = document.getElementById("sign-up-form");
+    signUpForm.addEventListener("submit", function(event) {
+      event.preventDefault();
+      const username = signUpForm.elements.username.value;
+      const age = signUpForm.elements.age.value;
+      const email = signUpForm.elements.email.value;
+      const password = signUpForm.elements.password.value;
+  
+      if (username.trim() === "" || age.trim() === "" || email.trim() === "" || password.trim() === "") {
+        alert("Please fill in all the required fields.");
+      } else {
+        window.location.href = "youtube.html";
+      }
+    });
+  </script>
+  
+</body>
+</html>
